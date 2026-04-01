@@ -1,19 +1,20 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
+  background-color: #f5f3ff; /* fundo roxo bem claro */
+  color: #4c1d95; /* texto roxo escuro */
 }
 
 header {
   text-align: center;
   padding: 20px;
-  border-bottom: 1px solid #1f3d2b;
+  border-bottom: 1px solid #a855f7; /* roxo */
+  background-color: #ffffff;
 }
 
 .logo {
   font-family: 'Pacifico', cursive;
-  color: #d4af37;
+  color: #7c3aed; /* roxo principal */
   font-size: 40px;
 }
 
@@ -23,10 +24,10 @@ header {
 }
 
 .post {
-  background-color: #0f1f16;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px #0f1f16;
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.2); /* sombra roxa */
 }
 
 .post-header {
@@ -49,11 +50,11 @@ header {
 
 .name {
   font-weight: bold;
-  color: #d4af37;
+  color: #7c3aed; /* roxo */
 }
 
 .username {
-  color: #888;
+  color: #806eb6; /* roxo claro */
   margin-left: 5px;
 }
 
@@ -66,8 +67,8 @@ header {
 }
 
 button {
-  background-color: #1f3d2b;
-  color: #fff;
+  background-color: #ed3a70; /* roxo */
+  color: #ffffff;
   border: none;
   padding: 8px 15px;
   border-radius: 20px;
@@ -75,11 +76,12 @@ button {
 }
 
 button:hover {
-  background-color: #2e5c40;
+  background-color: #5709d4; /* roxo mais escuro */
 }
 
+/* comentários */
 .comments {
-  border-top: 1px solid #1f3d2b;
+  border-top: 1px solid #927ca7;
   padding-top: 15px;
 }
 
@@ -87,4 +89,19 @@ button:hover {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
+  background-color: #ede9fe; /* roxo bem claro */
+  padding: 10px;
+  border-radius: 8px;
 }
+.comments input {
+  width: 70%;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #a855f7;
+  margin-right: 5px;
+}
+.comment:last-child {
+  margin-bottom: 0;
+}
+}
+
