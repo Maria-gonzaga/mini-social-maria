@@ -7,12 +7,12 @@
 <style>
 body {
   font-family: Arial, sans-serif;
-  background: #959faf;
+  background: #f0f2f5;
   margin: 0;
 }
 
 header {
-  background: #4e2b47;
+  background: #148aeb;
   color: white;
   padding: 15px;
   text-align: center;
@@ -24,7 +24,7 @@ header {
 }
 
 .post {
-  background: rgb(148, 66, 117));
+  background: white;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -47,7 +47,7 @@ header {
 }
 
 .username {
-  color: rgb(88, 73, 110);
+  color: rgb(155, 33, 49);
   font-size: 14px;
 }
 
@@ -69,20 +69,20 @@ button {
 }
 
 .likeBtn {
-  background: #4e7686;
+  background: #274e5f;
 }
 
 .dislikeBtn {
-  background: #5f7d8a;
+  background: #a8066a;
 }
 
 .liked {
-  background: hsl(246, 30%, 51%);
+  background: #7abfff;
   color: white;
 }
 
 .disliked {
-  background: #b37979;
+  background: #d6303071;
   color: white;
 }
 </style>
@@ -92,7 +92,7 @@ button {
 <body>
 
 <header>
-  <h1>Mini Social 💜</h1>
+  <h1>Mini Social 💙 </h1>
 </header>
 
 <main class="feed">
@@ -101,7 +101,7 @@ button {
 
     <div class="post-header">
       
-     <img src="https://meioamargo.com/wp-content/uploads/2024/06/Bandida-Thumb-Light-1024x576.jpg" class="avatar">
+     <img src="https://meioamargo.com/wp-content/uploads/2024/06/Bandida-Thumb-Light-1024x576.jpg" class="avatar">"
 
       <div>
         <span class="name">maridapenha</span><br>
@@ -110,14 +110,30 @@ button {
     </div>
 
     <p class="post-text">
-      Hoje vamos fazer um bolo de leite conessado 👩‍💻🔥
+      vou te esinar a fazer cimidinhas de festa 💙 
     </p>
 
     <div class="post-actions">
-      <button class="likeBtn">👍 Curtir</button>
-      <button class="dislikeBtn">👎 Descurtir</button>
-      <span class="likeCount">0</span>
+      <button id="likeBtn">👍 Curtir</button>
+      <span id="likeCount">0</span>
     </div>
+
+    <div class="post-actions">
+      <button id="deslikeBtn">👎🏽  descurtir</button>
+      <span id="deslikeCount">0</span>
+    </div>
+
+    <section class="comments">
+      <div class="comment">
+       
+        <p>tipo bora fazer um brigadeiro comigo</p>
+      </div>
+
+      <div class="comment">
+  
+        <p>alegria!</p>
+      </div>
+    </section>
 
   </article>
 

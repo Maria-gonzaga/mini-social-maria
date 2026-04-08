@@ -1,48 +1,39 @@
-const likeBtn = document.querySelector(".likeBtn");
-const dislikeBtn = document.querySelector(".dislikeBtn");
-const countSpan = document.querySelector(".likeCount");
+let likeCount = 0;
+let curtido = false; // flag booleana
+let deslikeCount = 0;
+let descurtido = false; // flag booleana
 
-let count = 0;
-let liked = false;
-let disliked = false;
-
-likeBtn.addEventListener("click", function() {
-
-  if (!liked) {
-    liked = true;
-    likeBtn.classList.add("liked");
-    count++;
-
-    if (disliked) {
-      disliked = false;
-      dislikeBtn.classList.remove("disliked");
+function curtir() {
+   if(curtido == false){
+    likeCount++;
+    curtido = true;
+   document.getElementById("likeCount").innerText = likeCount;
+   }else{
+    likeCount--;
+    curtido = false;
+   document.getElementById("likeCount").innerText = likeCount;
+  
     }
 
-  } else {
-    liked = false;
-    likeBtn.classList.remove("liked");
-    count--;
-  }
 
-  countSpan.textContent = count;
-});
 
-dislikeBtn.addEventListener("click", function() {
+}
 
-  if (!disliked) {
-    disliked = true;
-    dislikeBtn.classList.add("disliked");
+   function descurtir() {
+      if(descurtido == false){
+         deslikeCount++;
+         descurtido = true;
+      document.getElementById("deslikeCount").innerText = deslikeCount;
+      } else{
+         deslikeCount--;
+         descurtido = false;
+    document.getElementById("deslikeCount").innerText = deslikeCount;
+ 
+      }
 
-    if (liked) {
-      liked = false;
-      likeBtn.classList.remove("liked");
-      count--;
-    }
+   }
 
-  } else {
-    disliked = false;
-    dislikeBtn.classList.remove("disliked");
-  }
+   document.getElementById("likeBtn").addEventListener("click", curtir);
+   document.getElementById("deslikeBtn").addEventListener("click", descurtir);
 
-  countSpan.textContent = count;
-});
+  
