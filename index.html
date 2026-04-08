@@ -1,51 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Mini Social</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <h1 class="logo">Mini Social</h1>
-    </header>
+<head>
+<meta charset="UTF-8">
+<title>Mini Social</title>
 
-    <main class="feed">
-      <article class="post">
-        <div class="post-header">
-          <img
-            src="assets/linda-mulher-africana-retrato-do-rosto-de-perto_53876-148041.avif"
-            class="avatar"
-          />
-          <div>
-            <span class="name">Maria vitoriaDev</span>
-            <span class="username">@mariavitoria</span>
-          </div>
-        </div>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #959faf;
+  margin: 0;
+}
 
-        <p class="post-text">
-          sonhe alto porque baixo vc não consegue
-        </p>
+header {
+  background: #4e2b47;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
 
-        <div class="post-actions">
-          <button id="likeBtn">Curtir</button>
-          <span id="likeCount">0</span>
-        </div>
+.feed {
+  max-width: 500px;
+  margin: 20px auto;
+}
 
-        <section class="comments">
-          <div class="comment">
-            <img src="assets/avatar.png" class="avatar-small" />
-            <img src="assets/avatar.png" class="avatar-small" />
-            <p>vamos fazer um bolo de banana !</p>
-          </div>
-        </section>
-      </article>
-    </main>
+.post {
+  background: rgb(148, 66, 117));
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
-    <script src="js/script.js"></script>
-  </body>
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.username {
+  color: rgb(88, 73, 110);
+  font-size: 14px;
+}
+
+.post-text {
+  margin: 15px 0;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.likeBtn {
+  background: #4e7686;
+}
+
+.dislikeBtn {
+  background: #5f7d8a;
+}
+
+.liked {
+  background: hsl(246, 30%, 51%);
+  color: white;
+}
+
+.disliked {
+  background: #b37979;
+  color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Mini Social 💜</h1>
+</header>
+
+<main class="feed">
+
+  <article class="post">
+
+    <div class="post-header">
+      
+     <img src="https://meioamargo.com/wp-content/uploads/2024/06/Bandida-Thumb-Light-1024x576.jpg" class="avatar">
+
+      <div>
+        <span class="name">maridapenha</span><br>
+        <span class="username">@maridapenha</span>
+      </div>
+    </div>
+
+    <p class="post-text">
+      Hoje vamos fazer um bolo de leite conessado 👩‍💻🔥
+    </p>
+
+    <div class="post-actions">
+      <button class="likeBtn">👍 Curtir</button>
+      <button class="dislikeBtn">👎 Descurtir</button>
+      <span class="likeCount">0</span>
+    </div>
+
+  </article>
+
+</main>
+
+<script src="js/script.js"></script>
+</body>
 </html>
